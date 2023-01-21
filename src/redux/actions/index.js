@@ -1,7 +1,8 @@
 import axios from 'axios'; 
 
 // import { API_URL } from '../../config/environment.js';
-const API_URL = `http://localhost:3001`;
+const { REACT_APP_API_URL } = process.env
+const API_URL = REACT_APP_API_URL? REACT_APP_API_URL: `http://localhost:3001`;
 
 export const GET_DEPLOYMENTS = "GET_VERCEL_D";
 export const GET_PROJECTS = "GET_PROJECTS";
