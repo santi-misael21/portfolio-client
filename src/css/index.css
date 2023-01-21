@@ -1,0 +1,10 @@
+.eachone {
+  background-color: #240024;
+  border: 1px solid purple;
+  margin: 12px;
+  border-radius: 7px;
+  padding: 20px;
+}
+.projects {
+  display: block;
+}

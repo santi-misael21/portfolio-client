@@ -1,0 +1,195 @@
+.divnavsup{
+  min-width: 360px;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+    /* padding: 10px; */
+}
+/* * { */
+  /* background-color: black;
+  color: white; */
+/* } */
+/* .App{
+  position: absolute;
+} */
+
+.spangeneralZ{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.logoZ{
+  min-width: 250px;
+}
+
+.lorem{
+  /* border: 1px solid blue; */
+  flex: 1;
+  min-width: 250px;
+  background-color: orangered;
+  padding: 6px 1rem;
+  border: 1px dashed gray;
+}
+
+.lorem:first-child{
+  flex: 2;
+  /* background-color: orangered; */
+  /* padding: 1rem; */
+  /* margin: 1rem;
+  margin-bottom: 0px; */
+}
+
+/* .lorem div{ */
+  /* padding: 1rem; */
+  /* background-color: orangered; */
+/* } */
+
+#fixedforslide{
+    /* height: 2vh; */
+    font-size: 11px;
+    padding: 0px 2rem 3px 2rem;
+    background-color: rgb(144, 98, 0);
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.resto{
+  border: 1px solid yellow;
+}
+
+.comedown, .enter{
+  animation-name: hideOut;
+  animation-duration: 0.5s;
+}
+
+.enter{
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 100%;
+    min-width: 360px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.hide{
+    animation-name: hideIn;
+    animation-duration: 0.5s;
+    position: absolute;
+}
+
+.navsupcontent{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    height: 1.75rem;
+    padding: 4px 2px 2px 2px;
+    /* position: absolute;  */
+  width: 100%;
+}
+.spangeneral{
+  display: flex;
+  background-color: orange;
+}
+
+.menu{
+  background-color: orangered;
+  border-radius: 5px;
+  padding: 1px 2px 4px 2px;
+  border: 1px solid black;
+}
+
+.right{
+  width: 110px;
+  /* margin-right: -5px; */
+  /* margin-left: 140px; */
+}
+
+/* img{
+  width: 26px;
+} */
+
+.middle{
+  margin-left: 2%;
+}
+
+.input{
+  width:
+  137px;
+}
+
+.menuleft{
+  /* width: 90px; */
+  background-color: orangered;
+  border-radius: 5px;
+  border: 1px solid black;
+  /* padding-bottom: 10px; */
+
+}
+.left{
+  width: 65px;
+  /* margin-left: -2rem; */
+  /* margin-right: 90%; */
+}
+
+.logo{
+  margin: 0px 5px;
+  background-color: orange;
+  height: 1.75rem;
+  padding: 4px 0px 2px 0px;
+}
+
+.list{
+  background-color: gray;
+  color: azure;
+  padding: 5px;
+  border: 1px solid black;
+  width: 90px;
+  /* margin-right: 20px; */
+}
+
+.divoflist{
+  margin-top: 5px;
+}
+
+/* .logo{ */
+  /* width: 90px; */
+  /* border: 3px solid black; */
+/* } */
+/*id del seleccionado en la lista artesanal hecha con div*/
+#s{
+  background-color: greenyellow;
+}
+
+nav{
+  border: 1px solid green;
+}
+
+@keyframes hideOut {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+  /* @keyframes hideIn{
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    to {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+  } */
