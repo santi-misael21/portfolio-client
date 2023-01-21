@@ -13,7 +13,7 @@ function App() {
       <div onMouseEnter={()=>setEnter(true)}>
         <Navsup ent={enter}/>
       </div>
-      <div className='resto' onClick={()=>setEnter(false)}>
+      <div className='resto' onClick={()=>setEnter(false)}> 
       </div>
     </div>
   );
