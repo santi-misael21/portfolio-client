@@ -8,7 +8,7 @@ export default function Eachone ({name, url, email, githubLogin, inspectorUrl, t
             {/* Nombre: */}
             {name}
             <br />
-            <a href={`https://${url}`} target='_blank'>{url}</a>
+            <a className="anchor" href={`https://${url}`} target='_blank'>{url}</a>
             <br />
             {/* Email: {email}
             <br />
@@ -20,7 +20,7 @@ export default function Eachone ({name, url, email, githubLogin, inspectorUrl, t
             <br /> 
             GitHub Login: {githubLogin}
             <br /> */}
-            <a href={`https://github.com/${githubLogin}/${githubRepo}`} target='_blank'>GitHub Repo</a>
+            <a className="anchor" href={`https://github.com/${githubLogin}/${githubRepo}`} target='_blank'>GitHub Repo</a>
         </div>
     )
 }

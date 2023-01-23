@@ -21,10 +21,10 @@ export default function Projects(){
         if (!Object.keys(deployments).length) dispatch(getDeployments()) 
     });
 
-    console.log(deployments)
+    // console.log(deployments)
 
     return (
-        <div>
+        <div className="proj">
             <div onMouseEnter={()=>setEnter(true)}>
                 <Navsup ent={enter}/>
             </div>

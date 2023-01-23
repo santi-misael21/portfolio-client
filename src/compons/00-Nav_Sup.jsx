@@ -20,9 +20,9 @@ export default function Navsup({ent}){
     if(!ent && leftmenu) displayLeftMenu(false)
 
     //DATA
-    let list= ["Log in", "Log out", "Change account"]
-    let routes= ["login", "logout", "change-account"]
-    let sections= ["blog", "projects", "contact", "about"]
+    let list= ["English", "Español"]
+    let routes= ["https://drive.google.com/file/d/1FEayO1DXcdfBJFRTN5pW8yF2CyKCVGy0/view?usp=share_link", "https://drive.google.com/file/d/1MOMqtNJSWi7h5kMAVANOCrkW3lMEmVkI/view?usp=share_link"]
+    let sections= [/*"blog", */"projects",/* "contact", */"about"]
 
     //FUNCTIONS
     function chngInput(e){
@@ -96,23 +96,23 @@ export default function Navsup({ent}){
                             </datalist>}
                         </span>
                         <span className="right">
-                            {/* <label className="menu" 
+                            <label className="menu" 
                             // onClick={()=>{displayMenu(true); displayLeftMenu(false)}} 
                             onMouseMove={()=>{displayMenu(true); displayLeftMenu(false)}} 
                             // onMouseLeave={()=>displayMenu(false)}
-                            > */}
-                                {/* {'Log options'} */}
+                            >
+                                {'Resume'}
                                 {/* <input type='search' list="log" placeholder="Enter a phrase for help"/> */}
-                            {/* </label> */}
-                            {/* {menu && <div className="divoflist" 
+                            </label>
+                            {menu && <div className="divoflist" 
                             // onMouseEnter={()=>displayMenu(true)}
                             >
-                                {list.map((l,i)=><Link key={i} to={`/${routes[i]}`}><button className="list" id={elem===i? 's':''} onMouseEnter={(e)=>onEnter(e)} 
-                                onMouseLeave={()=>onLeave()} >{l}</button></Link>)}
-                            </div>} */}
-                            {/* <datalist id="log">
+                                {list.map((l,i)=><a key={i} href={routes[i]} target='_blank' rel="noreferrer"><button className="list" id={elem===i? 's':''} onMouseEnter={(e)=>onEnter(e)} 
+                                onMouseLeave={()=>onLeave()} >{l}</button></a>)}
+                            </div>}
+                            <datalist id="log">
                                 {list.map((l,i)=><option key={i} value={l}></option>)}
-                            </datalist> */}
+                            </datalist>
                             {/* <GoogleLogin
                                 clientId="891166692728-dd16ccbpj6peq9jq18a5moqot74pm3rv.apps.googleusercontent.com"
                                 
