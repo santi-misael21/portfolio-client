@@ -19,16 +19,93 @@
 .projects {
   display: block;
 }
+.general-about {
+  min-height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .about {
   margin: 0 10px;
   padding: 0 10px;
 }
+@media screen and (max-width: 414px) {
+  .about {
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .about {
+    margin: 0 2px;
+    padding: 0 2px;
+  }
+}
 .career {
   font-size: 16px;
-  margin: 0 20px;
+  margin: 10px 20px 0;
   padding: 10px 20px;
   border-radius: 10px;
   border: 1px solid orangered;
+}
+@media screen and (max-width: 414px) {
+  .career {
+    margin: 5px 10px 0;
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .career {
+    margin: 2px 5px 0;
+    padding: 2px 5px;
+  }
+}
+#horiz-resp {
+  display: flex;
+  justify-content: space-around;
+}
+#horiz-resp #intro {
+  width: 60%;
+  padding: 1% 2%;
+}
+#horiz-resp #right {
+  display: flex;
+  justify-content: space-around;
+}
+#horiz-resp #right #exp,
+#horiz-resp #right #hs,
+#horiz-resp #right #prs {
+  width: 100%;
+  padding: 10% 2%;
+  border: 1px solid purple;
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (max-width: 800px) {
+  #horiz-resp {
+    display: block;
+  }
+  #horiz-resp #intro,
+  #horiz-resp #right {
+    width: 85%;
+    margin: 20px auto;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 414px) {
+  #horiz-resp #intro,
+  #horiz-resp #right {
+    width: 90%;
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #horiz-resp #intro,
+  #horiz-resp #right {
+    width: 95%;
+  }
 }
 #horiz {
   display: flex;
@@ -38,11 +115,66 @@
   border: 1px solid gray;
   text-align: center;
   width: 100%;
+  min-width: 25%;
+}
+@media screen and (max-width: 800px) {
+  #locker {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 414px) {
+  #locker {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #locker {
+    font-size: 5px;
+  }
 }
 #lockerson {
   display: flex;
   width: 100%;
+  min-width: 15%;
+}
+@media screen and (max-width: 800px) {
+  #lockerson {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 414px) {
+  #lockerson {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #lockerson {
+    font-size: 5px;
+  }
 }
 .color {
+  color: yellow;
+}
+a {
+  color: olivedrab;
+}
+a:hover,
+a:visited:hover {
+  color: yellowgreen;
+}
+a:visited {
+  color: #3f5513;
+}
+.link-prs {
+  color: olivedrab;
+}
+.link-prs,
+.link-prs:visited:hover {
+  color: yellowgreen;
+}
+.link-prs:visited {
+  color: #3f5513;
+}
+#title {
   color: yellow;
 }
